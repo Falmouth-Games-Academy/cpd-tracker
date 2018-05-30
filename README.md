@@ -1,2 +1,5 @@
-# cpd-tracker
-CPD tracking, but gamified
+# CPD Tracking, but Gamified!
+
+## Contributors
+
+Michael 'Adrir' Scott
