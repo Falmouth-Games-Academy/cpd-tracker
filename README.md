@@ -16,3 +16,5 @@ Aidan Crossan
 - The player could create an avatar they can customise.
 
 - A diary sort of design that you can customise.
+
+- Some sort of pet management game which survives by consuming information that the player enters about their weekly development? Thinking a bit like Tamagotchi where if they leave it for too long, it will die.
