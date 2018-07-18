@@ -6,7 +6,8 @@
 ### Christopher Nash, 
 ### Matthew Paul Taylor, 
 ### Aidan Crossan,
-### James Pitt
+### James Pitt,
+### Kieran Welch
 
 ## Ideas
 - Well the user should in theory be visiting the tracker every week to update their personal weekly reports, you could therefore implement some sort of reward scheme that gives them something for visiting it each week.
