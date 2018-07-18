@@ -9,7 +9,7 @@
       <button class="btn btn-outline-info ml-2" @click="clickOpenDashboardModalButton()">module 2</button>
       <button class="btn btn-outline-info ml-3" @click="clickOpenDashboardModalButton()">module 3</button>
     </div>
-    <a class="btn btn-info" href="/cpd/new">Retrieve CPD data</a>
+    <a class="btn btn-info" href="/account/profile">Retrieve CPD data</a>
   </div>
 
   <modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
@@ -27,7 +27,7 @@
       <button type="button" data-dismiss="modal" class="btn btn-outline-info">Continue</button>
     </div>
   </modal>
-  <!--<modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
+  <modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
     <div class="modal-header">
       <h2 class="modal-title">module 2</h2>
       <hr/>
@@ -42,7 +42,7 @@
       <button type="button" data-dismiss="modal" class="btn btn-outline-info">Continue</button>
     </div>
   </modal>
-  <modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
+  <!--<modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
     <div class="modal-header">
       <h2 class="modal-title">module 3</h2>
       <hr/>
