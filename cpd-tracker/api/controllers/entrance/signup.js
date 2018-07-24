@@ -82,17 +82,6 @@ the account verification message.)`,
     .intercept({name: 'UsageError'}, 'invalid')
     .fetch();
 
-    // If billing feaures are enabled, save a new customer entry in the Stripe API.
-    // Then persist the Stripe customer id in the database.
-    if (sails.config.custom.enableBillingFeatures) {
-      let stripeCustomerId = await sails.helpers.stripe.saveBillingInfo.with({
-        emailAddress: newEmailAddress
-      });
-      await User.update(newUserRecord.id).set({
-        stripeCustomerId
-      });
-    }
-
     // Store the user's new id in their session.
     this.req.session.userId = newUserRecord.id;
 

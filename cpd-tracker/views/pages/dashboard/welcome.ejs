@@ -4,66 +4,15 @@
     <hr/>
     <p>Log in here weekly to keep track of your CPD.</p>
     <div class="buttons">
-      <!--<a class="btn btn-info" href="/cpd/new">Module 1</a>-->
-      <button class="btn btn-outline-info ml-2" @click="clickOpenDashboardModalButton()">module 1</button>
-      <button class="btn btn-outline-info ml-2" @click="clickOpenDashboardModalbButton()">module 2</button>
-      <button class="btn btn-outline-info ml-3" @click="clickOpenDashboardModalButton()">module 3</button>
+      <a class="btn btn-info" href="/cpd/new">Module 1</a>
+      <a class="btn btn-info" href="/cpd/new">Module 2</a>
+      <a class="btn btn-info" href="/cpd/new">Module 3</a>
     </div>
-    <a class="btn btn-info" href="/account/profile">Retrieve CPD data</a>
+      <p>
+        </P>
+        <p>
+        <a class="btn btn-info" href="/account/profile">Retrieve CPD data</a>
+      </p>
   </div>
-
-  <modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
-    <div class="modal-header">
-      <h2 class="modal-title">module 1</h2>
-      <hr/>
-      <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <h5 class="section-heading">memes</h5>
-      <p>Press continue to update the current week CPD </p>
-    </div>
-    <div class="modal-footer flex-row-reverse justify-content-between">
-      <button type="button" data-dismiss="modal" class="btn btn-info">Close</button>
-      <button type="button" data-dismiss="modal" class="btn btn-outline-info">Continue</button>
-    </div>
-  </modal>
-<<<<<<< HEAD
-  <modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
-=======
-  <modalb class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
->>>>>>> d1d1a5052d85465d07afb5547722dd3ae77324b5
-    <div class="modal-header">
-      <h2 class="modal-title">module 2</h2>
-      <hr/>
-      <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <h5 class="section-heading">memes</h5>
-      <p>Press continue to update the current week CPD </p>
-    </div>
-    <div class="modal-footer flex-row-reverse justify-content-between">
-      <button type="button" data-dismiss="modal" class="btn btn-info">Close</button>
-      <button type="button" data-dismiss="modal" class="btn btn-outline-info">Continue</button>
-    </div>
-<<<<<<< HEAD
-  </modal>
-=======
-  </modalb>
->>>>>>> d1d1a5052d85465d07afb5547722dd3ae77324b5
-  <!--<modal class="example-modal" v-if="dashboardModalVisible" @close="closeDashboardModal()" v-cloak>
-    <div class="modal-header">
-      <h2 class="modal-title">module 3</h2>
-      <hr/>
-      <button type="button" class="modal-close-button" data-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <h5 class="section-heading">memes</h5>
-      <p>Press continue to update the current week CPD </p>
-    </div>
-    <div class="modal-footer flex-row-reverse justify-content-between">
-      <button type="button" data-dismiss="modal" class="btn btn-info">Close</button>
-      <button type="button" data-dismiss="modal" class="btn btn-outline-info">Continue</button>
-    </div>
-  </modal>-->
 </div>
 <%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>
