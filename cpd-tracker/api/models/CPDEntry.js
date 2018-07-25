@@ -14,12 +14,21 @@ module.exports = {
 
     title: {
       type: 'string',
+      required: true
+    },
+    bio: {
+      type: 'string',
       required: true,
-      description: 'unique title for the entry',
-      maxLength: 120,
-      example: 'Good day'
+    },
+    rating: {
+      type: 'number',
+      required: true,
     },
 
+    userId: {
+      type: 'string',
+      required: true
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗

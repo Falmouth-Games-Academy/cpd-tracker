@@ -13,7 +13,18 @@ module.exports = {
       type: 'string',
       example: 'Frida Kahlo de Rivera',
       description: 'The user\'s full name.',
-    }
+    },
+
+    bio:  {
+      required: true,
+      type: 'string'
+    },
+
+    rating:  {
+      required: true,
+      type: 'number',
+    },
+
 
   },
 
@@ -29,12 +40,15 @@ module.exports = {
     // (Also use `fetch` to retrieve the new ID so that we can use it below.)
     var newCPDEntry = await CPDEntry.create(Object.assign({
       title: inputs.title,
+      bio: inputs.bio,
+      rating: Number(inputs.rating),
+      userId: this.req.session.userId
     }, {}))
     .fetch();
 
 
     // Store the user's new id in their session.
-    // this.req.session.userId = newUserRecord.id;
+    //
 
     // Since everything went ok, send our 200 response.
     return exits.success();
