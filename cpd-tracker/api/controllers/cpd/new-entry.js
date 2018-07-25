@@ -11,13 +11,14 @@ module.exports = {
     title:  {
       required: true,
       type: 'string',
-      example: 'Frida Kahlo de Rivera',
-      description: 'The user\'s full name.',
+      //minLength: 7,
+      maxLength: 9,
     },
 
     bio:  {
       required: true,
       type: 'string'
+      //minLength: 200
     },
 
     rating:  {
