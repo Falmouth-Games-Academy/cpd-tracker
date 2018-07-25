@@ -1,0 +1,37 @@
+<div id="new-entry" v-cloak>
+  <div class="container">
+    <h1>Add a New Entry:</h1>
+    <hr/>
+    <ajax-form action="newEntry" :syncing.sync="syncing" :cloud-error.sync="cloudError" @submitted="submittedForm()" :form-data="formData">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="title">Module</label>
+            <input class="form-control" id="title" name="title" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.title" focus-first>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="full-name">week bio</label>
+          <textarea  class="form-control" v-model.trim="formData.bio">stuff </textarea>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="full-name">1 - 10 rate this week</label>
+          <input class="form-control" id="slider1" type="range" min="1" max="10" step="1" v-model="formData.rating"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group text-right">
+            <a class="btn btn-outline-info" href="/welcome">Cancel</a>
+            <ajax-button type="submit" :syncing="syncing" class="btn btn-dark">Add Entry</ajax-button>
+          </div>
+        </div>
+      </div>
+    </ajax-form>
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>

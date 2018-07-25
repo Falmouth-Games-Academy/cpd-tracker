@@ -1,0 +1,18 @@
+<div id="new-entry" v-cloak>
+  <div class="container">
+    <h1>CPD journal:</h1>
+    <hr/>
+      <ul class="cpd-list">
+      <% _.each(entries, function (entry) { %>
+
+        <li>
+          <h1> Title: <%= entry.title %></h1>
+          <p> Bio: <%= entry.bio %> </p>
+          <p> Rating: <%= entry.rating %>/10 </p>
+          <p> Date: <%= new Date(entry.createdAt).toDateString() %> </p>
+        </li>
+      <% })  %>
+    </ul>
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>

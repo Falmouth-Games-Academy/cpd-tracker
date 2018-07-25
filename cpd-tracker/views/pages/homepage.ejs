@@ -1,0 +1,19 @@
+<div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
+  <div class="hero d-flex flex-column justify-content-center" full-page-hero>
+    <div class="container text-center">
+      <div class="hero-image">
+        <img class="ship" alt="book float" src="/images/book.png"/>
+        <img class="water" alt="The shadow of the floating ship on the water" src="/images/hero-water.png"/>
+      </div>
+      <h1 class="display-4"><strong>CPD</strong> tracker</h1>
+      <div>
+        <div class="more-info-text" @click="clickHeroButton()">
+          <div class="text">Dive in</div>
+          <div class="icon">&darr;</div>
+          <a class="btn btn-info" href="/signup">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>
