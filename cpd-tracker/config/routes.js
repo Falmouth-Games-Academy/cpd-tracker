@@ -36,6 +36,7 @@ module.exports.routes = {
 
   'GET /cpd/new':            { action: 'cpd/view-new-entry' },
   'GET /cpd/all':            { action: 'cpd/all-entries' },
+
   'GET /wellbeing/new':            { action: 'wellbeing/view-wellness-entry' },
   'GET /wellbeing/all':            { action: 'wellbeing/wellness-all-entries' },
 

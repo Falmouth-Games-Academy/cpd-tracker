@@ -29,7 +29,6 @@ parasails.registerPage('new-entry', {
   },
   mounted: async function() {
     //…
-    console.log('TAH DAH')
   },
 
   //  ╦╔╗╔╔╦╗╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
