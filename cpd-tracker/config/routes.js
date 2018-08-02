@@ -37,6 +37,9 @@ module.exports.routes = {
   'GET /cpd/new':            { action: 'cpd/view-new-entry' },
   'GET /cpd/all':            { action: 'cpd/all-entries' },
 
+  'GET /wellbeing/new':            { action: 'wellbeing/view-wellness-entry' },
+  'GET /wellbeing/all':            { action: 'wellbeing/wellness-all-entries' },
+
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
@@ -52,7 +55,7 @@ module.exports.routes = {
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
   'POST  /api/v1/cpd/new':                                { action: 'cpd/new-entry' },
-
+  'POST  /api/v1/wellbeing/new':                          { action: 'wellbeing/wellness-entry' },
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
